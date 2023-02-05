@@ -4,9 +4,9 @@
 
 
 Terdapat 5 service antara lain :
-- User service : menggunakan database PostgreSql untuk menyimpan data
-- Order service : menggunakan database PostgreSql untuk menyimpan data
-- Procurement service : menggunakan database PostgreSql untuk menyimpan data
+- User service : menggunakan sharing database PostgreSql untuk menyimpan data
+- Order service : menggunakan sharing database PostgreSql untuk menyimpan data
+- Procurement service : menggunakan sharing database PostgreSql untuk menyimpan data
 - Product service : menggunakan database MongoDB karena atribut setiap product bisa berbeda agar tidak terdapat column yang null jika menggunakan database transactional seperti PostgreSql. Sehingga atribute untuk setiap product akan bervariasi sesuai dengan yang dibutuhkan dengan menggunakan database document oriented MongoDB.
 - Catalog service : menggunakan database Elastic search agar ketika melakukan pencarian product lebih cepat.
 
